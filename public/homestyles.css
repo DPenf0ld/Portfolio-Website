@@ -1,0 +1,30 @@
+
+/* Hide default cursor */
+body {
+    background-color: rgb(5, 5, 5);
+    cursor: none;
+}
+
+/* Small dot (exact mouse position) */
+.cursor-dot {
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+/* Larger outline (lags behind) */
+.cursor-outline {
+  width: 60px;
+  height: 60px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+}
